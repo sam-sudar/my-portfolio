@@ -7,45 +7,49 @@ import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
+import portfolioProjects from "@/data/ProjectsData";
 
-const portfolioProjects = [
-  {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
-  },
-  {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
-  },
-  {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
-  },
-];
+// const portfolioProjects = [
+//   {
+//     id: 1,
+//     company: "Acme Corp",
+//     year: "2022",
+//     title: "Dark Saas Landing Page",
+//     results: [
+//       { title: "Enhanced user experience by 40%" },
+//       { title: "Improved site speed by 50%" },
+//       { title: "Increased mobile traffic by 35%" },
+//     ],
+//     link: "https://youtu.be/4k7IdSLxh6w",
+//     image: darkSaasLandingPage,
+//   },
+//   {
+//     id: 2,
+//     company: "Innovative Co",
+//     year: "2021",
+//     title: "Light Saas Landing Page",
+//     results: [
+//       { title: "Boosted sales by 20%" },
+//       { title: "Expanded customer reach by 35%" },
+//       { title: "Increased brand awareness by 15%" },
+//     ],
+//     link: "https://youtu.be/7hi5zwO75yc",
+//     image: lightSaasLandingPage,
+//   },
+//   {
+//     id: 3,
+//     company: "Quantum Dynamics",
+//     year: "2023",
+//     title: "AI Startup Landing Page",
+//     results: [
+//       { title: "Enhanced user experience by 40%" },
+//       { title: "Improved site speed by 50%" },
+//       { title: "Increased mobile traffic by 35%" },
+//     ],
+//     link: "https://youtu.be/Z7I5uSRHMHg",
+//     image: aiStartupLandingPage,
+//   },
+// ];
 
 export const ProjectsSection = () => {
   return (
@@ -88,6 +92,15 @@ export const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
+                  <a href={`/projects/${project.id}`}>
+                    <button
+                      className="bg-blue-800 text-gray-150 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 mr-2 md:w-auto px-6
+                "
+                    >
+                      <span>More Details</span>
+                      <ArrowUpRightIcon className="size-4" />
+                    </button>
+                  </a>
                   <a href={project.link}>
                     <button
                       className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6
