@@ -54,15 +54,26 @@ export default function ProjectPage({ params }: Props) {
           </div>
 
           {/* Results */}
+          <div className="flex gap-4">
+            <div className="w-[75%] bg-slate-800 p-4 rounded-lg">
+              <h1 className="text-2xl font-bold mb-2">Project Overview</h1>
+              <p className="text-md">{project.overview}</p>
+            </div>
+            <div className="w-[25%] bg-slate-800 p-4 rounded-lg">
+              <h1 className="text-2xl font-bold mb-2">Project Type</h1>
+              <p className="text-md">{project.projectType}</p>
+            </div>
+          </div>
           <div className="mb-12">
             <h2 className="text-xl md:text-2xl text-white font-semibold mb-4 border-b border-gray-700 inline-block pb-1">
               Impact Highlights 🚀
             </h2>
             <ul className="list-disc list-inside space-y-2 text-white/80 pl-4">
               {project.results.map((result: any, index: number) => (
-                <li key={index} className="text-base md:text-lg">
-                  {result.title}
-                </li>
+                // <li key={index} className="text-base md:text-lg">
+                //   {result.title}
+                // </li>
+                <div>{result.title}</div>
               ))}
             </ul>
           </div>
