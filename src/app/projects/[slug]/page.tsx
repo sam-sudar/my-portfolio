@@ -83,7 +83,6 @@ type Props = {
 export default function ProjectPage({ params }: Props) {
   const { slug } = params;
   const project = portfolioProjects.find((p: any) => p.id.toString() === slug);
-  const techObject = project?.techStack;
 
   if (!project) {
     return (
@@ -96,84 +95,141 @@ export default function ProjectPage({ params }: Props) {
   return (
     <>
       <Header />
-      <div className="min-h-screen text-white py-24 md:py-32 px-6 md:px-16 relative overflow-hidden">
-        {/* Grain effect background layer (optional) */}
+      <div className="min-h-screen mt-10 bg-gradient-to-br from-[#0f172a] to-[#1e1b4b] text-white py-24 px-6 md:px-20 relative overflow-hidden">
         <div
-          className="absolute inset-0 -z-30 opacity-5"
-          style={{ backgroundImage: `url(${grainImage.src})` }}
+          className="absolute inset-0 -z-30 opacity-10"
+          style={{
+            backgroundImage: `url(${grainImage.src})`,
+            backgroundSize: "cover",
+          }}
         ></div>
 
-        <div className="max-w-6xl mx-auto">
-          {/* Title & Company */}
-          <div className="text-center mb-10">
-            <h1 className="text-3xl md:text-5xl font-serif font-semibold text-purple-400 mb-4 tracking-wide">
-              {project.title}
-            </h1>
-            <p className="text-gray-400 text-sm md:text-base">
-              {project.company} &bull; {project.year}
-            </p>
-          </div>
+        <div className="max-w-[1600px] mx-auto grid grid-cols-1 xl:grid-cols-5 gap-10 animate-fade-in">
+          <div className="xl:col-span-3 space-y-12">
+            <div className="space-y-2">
+              <h1 className="text-5xl md:text-7xl font-extrabold text-lavender-300 drop-shadow-xl tracking-tight animate-slide-up">
+                {project.title}
+              </h1>
+              <p className="text-gray-300 text-base md:text-lg animate-fade-in-delay">
+                {project.company} &bull; {project.year}
+              </p>
+              <p className="mt-2 inline-block px-4 py-1 rounded-full border border-lavender-600 bg-gradient-to-r from-indigo-900 to-indigo-700 text-xs uppercase tracking-wider font-semibold text-lavender-200 animate-slide-in">
+                {project.projectType}
+              </p>
+            </div>
 
-          {/* Project Image */}
-          <div className="rounded-2xl overflow-hidden mb-10 border border-gray-800 blur-xs shadow-[rgba(0,0,15,0.5)_10px_5px_4px_0px]">
-            <Image
-              src={project.image}
-              alt={project.title}
-              className="w-full h-auto object-cover transition-transform duration-300 hover:scale-105"
-              placeholder="blur"
-            />
-          </div>
-
-          {/* Results */}
-          <div className="flex gap-4 bg-red-200">
-            <div className="w-[75%]">
-              <div className=" bg-slate-800 p-4 rounded-lg">
-                <h1 className="text-2xl font-bold mb-2">Project Overview</h1>
-                <p className="text-md">{project.overview}</p>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 animate-fade-in-delay">
+              <div className="col-span-2 row-span-2 rounded-2xl overflow-hidden border border-indigo-800 shadow-xl hover:scale-[1.02] transition-transform duration-300">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                  placeholder="blur"
+                />
               </div>
-              <div className="mb-12 bg-slate-400">
-                <h2 className="text-xl md:text-2xl text-white font-semibold mb-4 border-b border-gray-700 inline-block pb-1">
-                  Impact Highlights 🚀
-                </h2>
-                <ul className="list-disc list-inside space-y-2 text-white/80 pl-4">
-                  {project.results.map((result: any, index: number) => (
-                    // <li key={index} className="text-base md:text-lg">
-                    //   {result.title}
-                    // </li>
-                    <div>{result.title}</div>
-                  ))}
-                </ul>
+              <div className="rounded-2xl overflow-hidden border border-indigo-800 shadow-md hover:scale-105 transition-transform duration-300">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                  placeholder="blur"
+                />
+              </div>
+              <div className="rounded-2xl overflow-hidden border border-indigo-800 shadow-md hover:scale-105 transition-transform duration-300">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                  placeholder="blur"
+                />
               </div>
             </div>
-            <div className="w-[25%] bg-slate-800 p-4 rounded-lg">
-              <h1 className="text-2xl font-bold mb-2">Tech Stacks</h1>
-            </div>
+
+            <section className="bg-indigo-900/50 p-6 rounded-2xl border border-indigo-700 space-y-4 animate-fade-in">
+              <h2 className="text-3xl font-bold text-lavender-300 border-b border-lavender-600 pb-2">
+                Project Overview
+              </h2>
+              <p className="text-white/90 text-base leading-relaxed whitespace-pre-line">
+                {project.overview}
+              </p>
+            </section>
+
+            <section className="bg-indigo-900/50 p-6 rounded-2xl border border-indigo-700 space-y-4 animate-fade-in-delay">
+              <h2 className="text-3xl font-bold text-lavender-300 border-b border-lavender-600 pb-2">
+                Impact Highlights 🚀
+              </h2>
+              <ul className="list-disc pl-6 space-y-2 text-white/80">
+                {project.results.map((result: any, index: number) => (
+                  <li key={index}>{result.title}</li>
+                ))}
+              </ul>
+            </section>
           </div>
-          <div className="w-[25%] bg-slate-900 p-4 rounded-lg border border-gray-700">
-            <h2 className="text-xl md:text-2xl text-white font-semibold mb-4 border-b border-gray-600 pb-1">
+
+          <div className="xl:col-span-2 bg-gradient-to-br from-slate-900 to-indigo-950 p-8 rounded-3xl border border-indigo-700 shadow-2xl space-y-8 animate-fade-in">
+            <h2 className="text-4xl font-extrabold text-lavender-300 border-b border-indigo-600 pb-3">
               Tech Stack 🛠️
             </h2>
-            <ul className="space-y-3">
-              {project.techStack.frontend.map((tech: string, index: number) => (
-                <li key={index} className="flex items-center space-x-2">
-                  {techIcons[tech] && (
-                    <img src={techIcons[tech]} alt={tech} className="w-6 h-6" />
-                  )}
-                  <span className="text-white/90 text-sm">{tech}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+            <div className=" flex gap-2">
+              {["frontend", "middleware", "backend", "animations", "tools"].map(
+                (section) => {
+                  const tools =
+                    project.techStack[
+                      section as keyof typeof project.techStack
+                    ];
+                  if (!tools || !Array.isArray(tools) || tools.length === 0)
+                    return null;
 
-          {/* Action Button */}
-          <div className="flex justify-center">
+                  return (
+                    <div
+                      key={section}
+                      className="bg-indigo-900/40 p-5 rounded-xl border border-indigo-700 shadow-md"
+                    >
+                      <h3 className="text-white/80 text-base uppercase tracking-wider font-semibold mb-3">
+                        {section.charAt(0).toUpperCase() + section.slice(1)}
+                      </h3>
+                      <div className="grid grid-cols-4 sm:grid-cols-6 gap-4">
+                        {tools.map(
+                          (tech: string, index: number) =>
+                            techIcons[tech] && (
+                              <div
+                                key={index}
+                                className="relative group w-full h-full flex items-center justify-center hover:scale-110 transition-transform duration-300"
+                              >
+                                <img
+                                  src={techIcons[tech]}
+                                  alt={tech}
+                                  className="w-12 h-12 drop-shadow-lg md:w-20 md:h-20 sm:w-20"
+                                />
+                                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:flex items-center justify-center px-3 py-1 text-xs bg-indigo-800 text-white rounded shadow-lg z-20 whitespace-nowrap">
+                                  {tech}
+                                </div>
+                              </div>
+                            )
+                        )}
+                      </div>
+                    </div>
+                  );
+                }
+              )}
+            </div>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 animate-fade-in-delay">
             <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 bg-purple-600 hover:bg-purple-700 rounded-xl text-white font-semibold transition-all duration-300 shadow-md"
+              className="px-8 py-4 bg-purple-700 hover:bg-purple-800 rounded-xl text-white font-semibold shadow-lg transition-all duration-300 text-center"
             >
               🎬 Watch Project Demo
+            </a>
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-green-700 hover:bg-green-800 rounded-xl text-white font-semibold shadow-lg transition-all duration-300 text-center"
+            >
+              💻 View GitHub
             </a>
           </div>
         </div>
