@@ -170,7 +170,7 @@ export default function ProjectPage({ params }: Props) {
             <h2 className="text-4xl font-extrabold text-lavender-300">
               Tech Stack 🛠️
             </h2>
-            <div className=" flex gap-2 sm:flex-col">
+            <div className="flex flex-row gap-2 sm:flex-col lg:flex-row">
               {["frontend", "middleware", "backend", "animations", "tools"].map(
                 (section) => {
                   const tools =
@@ -183,7 +183,7 @@ export default function ProjectPage({ params }: Props) {
                   return (
                     <div
                       key={section}
-                      className="bg-gray-500 relative z-0 overflow-hidden after:z-10 after:content=[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 after:pointer-events-none p-5 rounded-xl  shadow-md"
+                      className="bg-gray-800 relative z-0 overflow-hidden after:z-10 after:content=[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 after:pointer-events-none p-5 rounded-xl  shadow-md"
                     >
                       <h3 className="text-white/80 text-base uppercase tracking-wider font-semibold mb-3">
                         {section.charAt(0).toUpperCase() + section.slice(1)}
@@ -194,7 +194,7 @@ export default function ProjectPage({ params }: Props) {
                             techIcons[tech] && (
                               <div
                                 key={index}
-                                className="relative group w-full h-full flex items-center justify-center hover:scale-110 transition-transform duration-300 bg-red-200"
+                                className="relative group w-full h-full flex items-center justify-center hover:scale-110 transition-transform duration-300"
                               >
                                 <img
                                   src={techIcons[tech]}

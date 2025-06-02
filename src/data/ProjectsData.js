@@ -75,98 +75,129 @@ const techIcons = {
 const portfolioProjects = [
   {
     id: 1,
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark SaaS Landing Page",
+    company: "BellaCiao Bakers",
+    year: "2024",
+    title: "BellaCiao – Bakery Website",
     overview: `
-      A sleek, futuristic dark-themed landing page for a SaaS platform. 
-      The design emphasizes contrast, fluid animations, and mobile-first responsiveness.
-      I collaborated with the marketing team to align the design with brand goals and optimized performance for Lighthouse benchmarks.
+      A full-stack bakery platform engineered with a Vue.js frontend, Fastify APIs, and MongoDB backend. 
+      Implemented a dynamic dashboard system and real-time order tracking, enabling efficient bakery operations 
+      and seamless user experience.
     `,
-    projectType: "Freelance Project",
+    projectType: "Client Project",
     responsibilities: [
-      "Created pixel-perfect, responsive design",
-      "Implemented dark mode system-wide",
-      "Integrated animations for hero and CTA sections",
-      "SEO optimization and accessibility improvements",
+      "Developed frontend with Vue.js and Tailwind CSS",
+      "Designed REST APIs with Fastify and Express",
+      "Built MongoDB schemas and integrated RabbitMQ for real-time order handling",
+      "Created a dashboard for store operations",
     ],
-    techIcons,
     techStack: {
-      frontend: ["Next.js", "TypeScript", "Tailwind CSS"],
-      animations: ["Framer Motion"],
-      deployment: ["Vercel"],
-      tools: ["Figma", "GitHub", "Lighthouse"],
+      frontend: ["Vue.js", "Tailwind CSS"],
+      backend: ["Fastify", "Express.js", "Node.js", "MongoDB", "RabbitMQ"],
+      animations: [],
+      deployment: ["Render"],
+      tools: ["Postman", "VS Code", "Git"],
     },
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Reduced order processing time by 45%" },
+      { title: "Improved store operation speed by 60%" },
+      { title: "Enabled real-time updates for orders and inventory" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://github.com/yourusername/bellaciao", // Replace
+    image: darkSaasLandingPage, // Replace with your import
   },
   {
     id: 2,
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light SaaS Landing Page",
+    company: "DecentralEd",
+    year: "2024",
+    title: "Blockchain Credential Storage",
     overview: `
-      A minimalist and performance-focused landing page for a B2B SaaS product. 
-      The project focused on clean layouts, intuitive navigation, and subtle micro-interactions. 
-      This was a solo project built from scratch to deployment, targeting early-stage businesses.
+      Developed a blockchain-based credential storage system. 
+      Designed and deployed smart contracts using Solidity and Ganache, then integrated blockchain features into a React frontend 
+      using Web3.js to provide decentralized certificate validation.
     `,
-    projectType: "Personal Project",
+    projectType: "Hackathon Project",
     responsibilities: [
-      "Developed responsive layout using utility-first CSS",
-      "Built reusable components for rapid prototyping",
-      "Integrated hero section animation and smooth scroll effects",
-      "Optimized image loading with Next.js image component",
+      "Wrote Solidity smart contracts for credential verification",
+      "Tested blockchain transactions on Ganache",
+      "Integrated Web3.js into React frontend",
+      "Handled MetaMask wallet interactions",
     ],
     techStack: {
-      frontend: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
-      animations: ["GSAP"],
-      deployment: ["Netlify"],
-      tools: ["Figma", "Photoshop", "Git"],
+      frontend: ["React"],
+      backend: [],
+      animations: [],
+      deployment: ["Localhost/Ganache"],
+      tools: ["Ganache", "Solidity", "Remix", "Web3.js"],
     },
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Created tamper-proof credential validation system" },
+      { title: "Improved trust using blockchain technology" },
+      { title: "Learned secure smart contract deployment" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://github.com/yourusername/blockchain-credentials", // Replace
+    image: darkSaasLandingPage, // Replace with your import
   },
   {
     id: 3,
-    company: "Quantum Dynamics",
+    company: "Eye & My Care",
     year: "2023",
-    title: "AI Startup Landing Page",
+    title: "SEO-Optimized Optometry Website",
     overview: `
-      A modern landing page built for a deep tech AI startup with a sci-fi inspired interface. 
-      This project focused on crafting a visionary aesthetic using soft glowing UI, asymmetric layouts, and engaging scroll animations.
-      It highlighted key product features and case studies using data-driven storytelling.
+      Delivered a professional React website for an optometry clinic focused on SEO performance. 
+      Integrated structured data, keyword targeting, and Lighthouse optimizations for fast loading and visibility.
     `,
-    projectType: "Collaborative Hackathon Project",
+    projectType: "Freelance Project",
     responsibilities: [
-      "Designed a futuristic interface with tech-themed aesthetics",
-      "Implemented animated sections triggered by scroll",
-      "Built modular components with Tailwind for reusability",
-      "Integrated YouTube and Calendly APIs for demos and scheduling",
+      "Developed mobile-first responsive layout in React",
+      "Integrated structured data and meta tags",
+      "Optimized loading time and accessibility",
+      "Performed keyword research and speed tests",
     ],
     techStack: {
-      frontend: ["Next.js", "TypeScript", "Tailwind CSS"],
-      backend: ["Node.js", "Express"],
-      animations: ["Framer Motion", "Locomotive Scroll"],
-      deployment: ["Vercel"],
-      tools: ["Whimsical", "Figma", "Postman"],
+      frontend: ["React"],
+      backend: [],
+      animations: [],
+      deployment: ["GitHub Pages"],
+      tools: ["Google PageSpeed", "Lighthouse", "SEO Tools"],
     },
     results: [
-      { title: "Enhanced user engagement with interactive UI" },
-      { title: "Reduced bounce rate by 60%" },
-      { title: "Won 2nd place in Startup Hack 2023" },
+      { title: "Increased search engine visibility by 50%" },
+      { title: "Boosted page speed score to 95+" },
+      { title: "Improved SEO ranking for targeted keywords" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://github.com/yourusername/eye-my-care", // Replace
+    image: darkSaasLandingPage, // Replace with your import
+  },
+  {
+    id: 4,
+    company: "NuxtChat Team",
+    year: "2023",
+    title: "NuxtChat – WhatsApp Clone",
+    overview: `
+      A clean, performant WhatsApp clone built with Nuxt.js and Tailwind CSS. 
+      Focused on modular design, responsiveness, and performance-first architecture.
+    `,
+    projectType: "Personal Project",
+    responsibilities: [
+      "Built WhatsApp-like chat UI with Nuxt.js",
+      "Designed reusable and modular components",
+      "Ensured responsiveness across devices",
+      "Maintained optimized layout and performance",
+    ],
+    techStack: {
+      frontend: ["Nuxt.js", "Tailwind CSS"],
+      backend: [],
+      animations: [],
+      deployment: ["Vercel"],
+      tools: ["VS Code", "Git"],
+    },
+    results: [
+      { title: "Achieved 100% responsive layout" },
+      { title: "Reduced bundle size with Nuxt.js optimization" },
+      { title: "Improved UI consistency with modular design" },
+    ],
+    link: "https://github.com/yourusername/nuxtchat", // Replace
+    image: darkSaasLandingPage, // Replace with your import
   },
 ];
 
