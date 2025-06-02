@@ -123,7 +123,7 @@ const portfolioProjects = [
       "Optimized image loading with Next.js image component",
     ],
     techStack: {
-      frontend: ["Next.js", "TypeScript", "Tailwind CSS"],
+      frontend: ["Next.js", "TypeScript", "Tailwind CSS", "Node.js"],
       animations: ["GSAP"],
       deployment: ["Netlify"],
       tools: ["Figma", "Photoshop", "Git"],
