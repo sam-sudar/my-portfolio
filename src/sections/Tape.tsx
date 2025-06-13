@@ -10,6 +10,14 @@ const words = [
   "Maintainable",
   "Creative",
   "TeamWork",
+    "AWS",
+    "React",
+    "Next",
+    "Tailwind",
+    "Typescript",
+    "Node",
+    "Express",
+    "MongoDB",
 ];
 
 export const TapeSection = () => {
@@ -22,7 +30,7 @@ export const TapeSection = () => {
               <Fragment key={idx}>
                 {words.map((word) => (
                   <div key={word} className="inline-flex gap-4 items-center">
-                    <span className="text-gray-900 uppercase font-extrabold text-sm">
+                    <span className="text-gray-900 uppercase font-manrope font-extrabold text-sm">
                       {word}
                     </span>
                     <StarIcon className="size-6 text-gray-900 -rotate-12" />

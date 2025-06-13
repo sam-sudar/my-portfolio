@@ -70,13 +70,13 @@ export const TestimonialsSection = () => {
                         />
                       </div>
                       <div>
-                        <div className="font-semibold">{testimonial.name}</div>
-                        <div className="text-sm text-white/40">
+                        <div className="font-semibold font-urbanist text-lg">{testimonial.name}</div>
+                        <div className="text-sm font-manrope text-white/40">
                           {testimonial.position}
                         </div>
                       </div>
                     </div>
-                    <p className="mt-4 text-sm md:text-base md:mt-6">
+                    <p className="mt-4 text-sm md:text-base md:mt-6 font-urbanist">
                       {testimonial.text}
                     </p>
                   </Card>

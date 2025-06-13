@@ -146,7 +146,7 @@ export const AboutSection = () => {
                 {hobbies.map((hobby) => (
                   <motion.div
                     key={hobby.title}
-                    className="inline-flex gap-2 items-center px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
+                    className="inline-flex gap-2 items-center px-6 cursor-pointer bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
                     style={{
                       left: hobby.left,
                       top: hobby.top,
@@ -154,7 +154,7 @@ export const AboutSection = () => {
                     drag
                     dragConstraints={constraintRef}
                   >
-                    <span className="font-medium text-gray-950">
+                    <span className="font-medium font-urbanist text-gray-950">
                       {hobby.title}
                     </span>
                     <span>{hobby.emoji}</span>

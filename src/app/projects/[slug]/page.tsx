@@ -107,13 +107,13 @@ export default function ProjectPage({ params }: Props) {
         <div className="max-w-[1600px] mx-auto grid grid-cols-1 xl:grid-cols-5 gap-10 animate-fade-in">
           <div className="xl:col-span-3 space-y-12">
             <div className="space-y-2">
-              <h1 className="text-5xl md:text-7xl font-serif tracking-wide font-extrabold text-lavender-300 drop-shadow-xl animate-slide-up">
+              <h1 className="text-5xl md:text-7xl font-space tracking-wide font-extrabold text-lavender-300 drop-shadow-xl animate-slide-up">
                 {project.title}
               </h1>
-              <p className="text-gray-300 text-base md:text-lg animate-fade-in-delay">
+              <p className="text-gray-300 font-urbanist text-base md:text-lg animate-fade-in-delay">
                 {project.company} &bull; {project.year}
               </p>
-              <p className="mt-2 inline-block px-4 py-1 rounded-full border border-lavender-600 bg-gradient-to-r from-indigo-900 to-indigo-700 text-xs uppercase tracking-wider font-semibold text-lavender-200 animate-slide-in">
+              <p className="mt-2 inline-block px-4 py-1 font-barlow rounded-full border border-lavender-600 bg-gradient-to-r from-indigo-900 to-indigo-700 text-xs uppercase tracking-wider font-semibold text-lavender-200 animate-slide-in">
                 {project.projectType}
               </p>
             </div>
@@ -146,28 +146,28 @@ export default function ProjectPage({ params }: Props) {
             </div>
 
             <section className="bg-gray-800 rounded-3xl relative z-0 overflow-hidden after:z-10 after:content=[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 after:pointer-events-none p-6">
-              <h2 className="text-2xl font-bold font-serif md:mt-2 md:text-4xl text-lavender-300 ">
+              <h2 className="text-3xl font-bold font-barlow md:mt-2 md:text-4xl text-lavender-300 ">
                 Project Overview
               </h2>
-              <p className="text-white/90  text-base leading-relaxed whitespace-pre-line">
+              <p className="text-white/90  text-base font-urbanist leading-relaxed whitespace-pre-line">
                 {project.overview}
               </p>
             </section>
 
             <section className="bg-gray-800 rounded-3xl relative z-0 overflow-hidden after:z-10 after:content=[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 after:pointer-events-none p-6 space-y-4 animate-fade-in-delay">
-              <h2 className="text-3xl font-bold text-lavender-300 pb-2">
+              <h2 className="text-3xl font-bold font-barlow md:mt-2 md:text-4xl text-lavender-300 pb-2">
                 Impact Highlights 🚀
               </h2>
               <ul className="list-disc pl-6 space-y-2 text-white/80">
                 {project.results.map((result: any, index: number) => (
-                  <li key={index}>{result.title}</li>
+                  <li className="font-urbanist" key={index}>{result.title}</li>
                 ))}
               </ul>
             </section>
           </div>
 
           <div className=" bg-gray-800 relative z-0 overflow-hidden after:z-10 after:content=[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 after:pointer-events-none p-8 rounded-3xl shadow-2xl space-y-8 animate-fade-in">
-            <h2 className="text-4xl font-extrabold text-lavender-300">
+            <h2 className="text-3xl font-extrabold font-barlow md:mt-2 md:text-4xl text-lavender-300">
               Tech Stack 🛠️
             </h2>
             <div className="flex flex-row gap-2 sm:flex-col lg:flex-row">
@@ -185,7 +185,7 @@ export default function ProjectPage({ params }: Props) {
                       key={section}
                       className="bg-gray-800 relative z-0 overflow-hidden after:z-10 after:content=[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 after:pointer-events-none p-5 rounded-xl  shadow-md"
                     >
-                      <h3 className="text-white/80 text-base uppercase tracking-wider font-semibold mb-3">
+                      <h3 className="text-white/80 text-base uppercase tracking-wider font-semibold mb-3 font-barlow">
                         {section.charAt(0).toUpperCase() + section.slice(1)}
                       </h3>
                       <div className="grid grid-cols-4 sm:grid-cols-6 gap-4">
@@ -214,12 +214,12 @@ export default function ProjectPage({ params }: Props) {
               )}
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 animate-fade-in-delay">
+          <div className=" flex gap-4 mt-8 animate-fade-in-delay">
             <a
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-purple-700 hover:bg-purple-800 rounded-xl text-white font-semibold shadow-lg transition-all duration-300 text-center"
+              className="px-8 py-4 bg-purple-700 hover:bg-purple-800 rounded-xl text-white font-manrope font-semibold shadow-lg transition-all duration-300 text-center"
             >
               🎬 Watch Project Demo
             </a>
@@ -227,7 +227,7 @@ export default function ProjectPage({ params }: Props) {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-green-700 hover:bg-green-800 rounded-xl text-white font-semibold shadow-lg transition-all duration-300 text-center"
+              className="px-8 py-4 bg-green-700 hover:bg-green-800 font-manrope rounded-xl text-white font-semibold shadow-lg transition-all duration-300 text-center"
             >
               💻 View GitHub
             </a>

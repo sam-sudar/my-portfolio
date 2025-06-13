@@ -73,11 +73,11 @@ export const ProjectsSection = () => {
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
-                    <span>{project.company}</span>
+                    <span className="font-barlow">{project.company}</span>
                     <span>&bull;</span>
-                    <span>{project.year}</span>
+                    <span className="font-barlow">{project.year}</span>
                   </div>
-                  <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
+                  <h3 className="font-space text-2xl mt-2 md:mt-5 md:text-4xl">
                     {project.title}
                   </h3>
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
@@ -85,7 +85,7 @@ export const ProjectsSection = () => {
                     {project.results.map((result) => (
                       <li
                         key={result.title}
-                        className="flex gap-2 text-sm text-white/50 md:text-base"
+                        className="flex gap-2 font-urbanist text-sm text-white/50 md:text-base"
                       >
                         <CheckCircleIcon className="size-5 md:size-6" />
                         <span>{result.title}</span>
@@ -97,7 +97,7 @@ export const ProjectsSection = () => {
                       className="bg-blue-800 text-gray-150 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 mr-2 md:w-auto px-6
                 "
                     >
-                      <span>More Details</span>
+                      <span className="font-manrope">More Details</span>
                       <ArrowUpRightIcon className="size-4" />
                     </button>
                   </a>
@@ -106,7 +106,7 @@ export const ProjectsSection = () => {
                       className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6
                 "
                     >
-                      <span>Visit Live Site</span>
+                      <span className="font-manrope">Visit Live Site</span>
                       <ArrowUpRightIcon className="size-4" />
                     </button>
                   </a>

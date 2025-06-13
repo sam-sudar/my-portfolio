@@ -18,58 +18,38 @@ const techIcons = {
   HTML: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
   "Vue.js":
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg",
-  Angular:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg",
+  "Nuxt.js":
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nuxtjs/nuxtjs-original.svg",
 
   // Backend
   "Node.js":
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
-  Express: "https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg",
-  Python:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
-  Java: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
-  "C#": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
-  PHP: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
-  Ruby: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ruby/ruby-original.svg",
-  Go: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg",
-
-  // Databases
+  "Express.js":
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+  Fastify: "https://www.vectorlogo.zone/logos/fastifyio/fastifyio-icon.svg",
   MongoDB:
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
-  PostgreSQL:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
-  MySQL:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
-  Redis:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg",
+  RabbitMQ: "https://www.vectorlogo.zone/logos/rabbitmq/rabbitmq-icon.svg",
+  Solidity:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg",
 
-  // Animations
-  "Framer Motion": "https://www.vectorlogo.zone/logos/framer/framer-icon.svg",
-  GSAP: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSIjODhDRTAyIi8+Cjwvc3ZnPgo=",
-  "Locomotive Scroll":
-    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSIjRkY2NjAwIi8+Cjwvc3ZnPgo=",
+  // Tools
+  Postman: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
+  "VS Code":
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+  Git: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+  Remix:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/remix/remix-original.svg",
+  "Web3.js":
+    "https://seeklogo.com/images/W/web3js-logo-62DEE79B50-seeklogo.com.png",
+  "Google PageSpeed":
+    "https://www.gstatic.com/images/branding/product/2x/pagespeed_96dp.png",
+  "SEO Tools": "https://cdn-icons-png.flaticon.com/512/888/888879.png",
 
   // Deployment
   Vercel: "https://www.vectorlogo.zone/logos/vercel/vercel-icon.svg",
-  Netlify: "https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg",
-  AWS: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
-  Docker:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
-  Heroku: "https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg",
-
-  // Tools
-  Figma:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
-  GitHub:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
-  Git: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
-  Photoshop:
-    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg",
-  Lighthouse:
-    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSIjRkY1NzIyIi8+Cjwvc3ZnPgo=",
-  Postman: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg",
-  Whimsical:
-    "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMTMuMDkgOC4yNkwyMCA5TDEzLjA5IDE1Ljc0TDEyIDIyTDEwLjkxIDE1Ljc0TDQgOUwxMC45MSA4LjI2TDEyIDJaIiBmaWxsPSIjNDMzNUZGIi8+Cjwvc3ZnPgo=",
+  Render:
+    "https://global-uploads.webflow.com/6076f5ad1b86005f9f6b3b9d/64a67c36e447ad267fcdcc13_render-icon.png",
 };
 
 const portfolioProjects = [
@@ -102,8 +82,8 @@ const portfolioProjects = [
       { title: "Improved store operation speed by 60%" },
       { title: "Enabled real-time updates for orders and inventory" },
     ],
-    link: "https://github.com/yourusername/bellaciao", // Replace
-    image: darkSaasLandingPage, // Replace with your import
+    link: "https://github.com/yourusername/bellaciao",
+    image: darkSaasLandingPage,
   },
   {
     id: 2,
@@ -134,8 +114,8 @@ const portfolioProjects = [
       { title: "Improved trust using blockchain technology" },
       { title: "Learned secure smart contract deployment" },
     ],
-    link: "https://github.com/yourusername/blockchain-credentials", // Replace
-    image: darkSaasLandingPage, // Replace with your import
+    link: "https://github.com/yourusername/blockchain-credentials",
+    image: darkSaasLandingPage,
   },
   {
     id: 3,
@@ -154,10 +134,10 @@ const portfolioProjects = [
       "Performed keyword research and speed tests",
     ],
     techStack: {
-      frontend: ["React"],
+      frontend: ["React", "CSS"],
       backend: [],
       animations: [],
-      deployment: ["GitHub Pages"],
+      deployment: ["Vercel"],
       tools: ["Google PageSpeed", "Lighthouse", "SEO Tools"],
     },
     results: [
@@ -165,8 +145,8 @@ const portfolioProjects = [
       { title: "Boosted page speed score to 95+" },
       { title: "Improved SEO ranking for targeted keywords" },
     ],
-    link: "https://github.com/yourusername/eye-my-care", // Replace
-    image: darkSaasLandingPage, // Replace with your import
+    link: "https://github.com/yourusername/eye-my-care",
+    image: darkSaasLandingPage,
   },
   {
     id: 4,
@@ -196,8 +176,8 @@ const portfolioProjects = [
       { title: "Reduced bundle size with Nuxt.js optimization" },
       { title: "Improved UI consistency with modular design" },
     ],
-    link: "https://github.com/yourusername/nuxtchat", // Replace
-    image: darkSaasLandingPage, // Replace with your import
+    link: "https://github.com/yourusername/nuxtchat",
+    image: darkSaasLandingPage,
   },
 ];
 
