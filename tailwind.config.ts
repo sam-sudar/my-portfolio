@@ -23,12 +23,13 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-        sans: 'var(--font-sans)',
-        serif: 'var(--font-serif)',
-        space: 'var(--font-space)',
-        barlow: 'var(--font-barlow)',
-        manrope: 'var(--font-manrope)',
-        urbanist: 'var(--font-urbanist)',
+        sans: ['var(--font-sans)'],
+        serif: ['var(--font-serif)'],
+        space: ['var(--font-space)'],
+        barlow: ['var(--font-barlow)'],
+        manrope: ['var(--font-manrope)'],
+        urbanist: ['var(--font-urbanist)'],
+        calistoga: ['var(--font-calistoga)'],
       },
       animation: {
         "ping-large": "ping-large 1s ease-in-out infinite",
