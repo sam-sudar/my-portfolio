@@ -7,30 +7,30 @@ Urbanist is a variable font with this axis:
   wght
 
 This means all the styles are contained in these files:
-  Urbanist-VariableFont_wght.ttf
-  Urbanist-Italic-VariableFont_wght.ttf
+  Urbanist/Urbanist-VariableFont_wght.ttf
+  Urbanist/Urbanist-Italic-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
 in those cases you can use the static font files for Urbanist:
-  static/Urbanist-Thin.ttf
-  static/Urbanist-ExtraLight.ttf
-  static/Urbanist-Light.ttf
-  static/Urbanist-Regular.ttf
-  static/Urbanist-Medium.ttf
-  static/Urbanist-SemiBold.ttf
-  static/Urbanist-Bold.ttf
-  static/Urbanist-ExtraBold.ttf
-  static/Urbanist-Black.ttf
-  static/Urbanist-ThinItalic.ttf
-  static/Urbanist-ExtraLightItalic.ttf
-  static/Urbanist-LightItalic.ttf
-  static/Urbanist-Italic.ttf
-  static/Urbanist-MediumItalic.ttf
-  static/Urbanist-SemiBoldItalic.ttf
-  static/Urbanist-BoldItalic.ttf
-  static/Urbanist-ExtraBoldItalic.ttf
-  static/Urbanist-BlackItalic.ttf
+  Urbanist/static/Urbanist-Thin.ttf
+  Urbanist/static/Urbanist-ExtraLight.ttf
+  Urbanist/static/Urbanist-Light.ttf
+  Urbanist/static/Urbanist-Regular.ttf
+  Urbanist/static/Urbanist-Medium.ttf
+  Urbanist/static/Urbanist-SemiBold.ttf
+  Urbanist/static/Urbanist-Bold.ttf
+  Urbanist/static/Urbanist-ExtraBold.ttf
+  Urbanist/static/Urbanist-Black.ttf
+  Urbanist/static/Urbanist-ThinItalic.ttf
+  Urbanist/static/Urbanist-ExtraLightItalic.ttf
+  Urbanist/static/Urbanist-LightItalic.ttf
+  Urbanist/static/Urbanist-Italic.ttf
+  Urbanist/static/Urbanist-MediumItalic.ttf
+  Urbanist/static/Urbanist-SemiBoldItalic.ttf
+  Urbanist/static/Urbanist-BoldItalic.ttf
+  Urbanist/static/Urbanist-ExtraBoldItalic.ttf
+  Urbanist/static/Urbanist-BlackItalic.ttf
 
 Get started
 -----------

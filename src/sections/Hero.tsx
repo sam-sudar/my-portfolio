@@ -112,29 +112,32 @@ export const HeroSection = () => {
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 rounded-full  animate-ping-large"></div>
             </div>
-            <div className="text-sm font-barlow font-medium">
+            <div className="text-sm font-manrope font-medium">
               Available for new projects
             </div>
           </div>
         </div>
         <div className="max-w-lg mx-auto">
-          <h1 className="font-calistoga font-extrabold text-9xl md:text-7xl text-center mt-8 tracking-wide">
+          <h1 className="font-righteous font-extrabold text-9xl md:text-7xl text-center mt-8 tracking-wide">
             {/* Building Exceptional User Experiences */}I am SAM
           </h1>
-          <p className="mt-4 text-center font-barlow text-white/60 md:text-lg">
-            <span className="font-bold font-barlow">Full-Stack Developer | React & TypeScript Specialist</span> <br />
-
-            I build fast, scalable, and user-focused web apps using modern frontend frameworks like React, Next.js, and Vue, with a strong grip on backend technologies and clean architecture.
+          <p className="mt-4 text-center font-fredoka text-white/60 md:text-lg">
+            <span className="font-bold font-epilogue">
+              Full-Stack Developer | React & TypeScript Specialist
+            </span>{" "}
+            <br />I build fast, scalable, and user-focused web apps using modern
+            frontend frameworks like React, Next.js, and Vue, with a strong grip
+            on backend technologies and clean architecture.
           </p>
         </div>
         <div className="flex flex-col md:flex-row items-center mt-8 justify-center gap-4">
           <button className="inline-flex cursor-pointer items-center gap-2 border border-white/15 px-6 h-12 rounded-xl">
-            <span className="font-semibold font-manrope">Explore My Work</span>
+            <span className="font-semibold font-urbanist">Explore My Work</span>
             <ArrowDown className="size-4" />
           </button>
           <button className="inline-flex cursor-pointer items-center gap-2 border bg-white text-gray-900 h-12 px-6 rounded-xl">
             <span>✋</span>
-            <span className="font-semibold font-manrope">Lets Connect</span>
+            <span className="font-semibold font-urbanist">Lets Connect</span>
           </button>
         </div>
       </div>
