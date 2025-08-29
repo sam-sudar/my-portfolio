@@ -1,4 +1,4 @@
-//ProjectData.js
+// ProjectData.js
 
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
@@ -85,7 +85,7 @@ const portfolioProjects = [
       { title: "Enabled real-time updates for orders and inventory" },
     ],
     link: "https://github.com/yourusername/bellaciao",
-    image: darkSaasLandingPage,
+    images: [darkSaasLandingPage, lightSaasLandingPage],
   },
   {
     id: 2,
@@ -117,7 +117,7 @@ const portfolioProjects = [
       { title: "Learned secure smart contract deployment" },
     ],
     link: "https://github.com/yourusername/blockchain-credentials",
-    image: darkSaasLandingPage,
+    images: [darkSaasLandingPage, aiStartupLandingPage],
   },
   {
     id: 3,
@@ -148,7 +148,7 @@ const portfolioProjects = [
       { title: "Improved SEO ranking for targeted keywords" },
     ],
     link: "https://github.com/yourusername/eye-my-care",
-    image: darkSaasLandingPage,
+    images: [lightSaasLandingPage, darkSaasLandingPage],
   },
   {
     id: 4,
@@ -179,7 +179,7 @@ const portfolioProjects = [
       { title: "Improved UI consistency with modular design" },
     ],
     link: "https://github.com/yourusername/nuxtchat",
-    image: darkSaasLandingPage,
+    images: [aiStartupLandingPage, darkSaasLandingPage],
   },
 ];
 
