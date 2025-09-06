@@ -19,6 +19,11 @@ import emc5 from "@/assets/images/optics/optics5.png";
 import nc1 from "@/assets/images/nuxtChat/nuxtChat1.jpg";
 import nc2 from "@/assets/images/nuxtChat/nuxtChat3.jpg";
 import nc3 from "@/assets/images/nuxtChat/nuxtChat2.jpg";
+import at1 from "@/assets/images/atlas/atlas1.jpg";
+import at2 from "@/assets/images/atlas/atlas2.jpg";
+import at3 from "@/assets/images/atlas/atlas3.jpg";
+import at4 from "@/assets/images/atlas/atlas4.jpg";
+import at5 from "@/assets/images/atlas/atlas5.jpg";
 
 // const techIcons = {
 //   // Frontend
@@ -196,6 +201,44 @@ const portfolioProjects = [
     ],
     link: "https://nuxt-chat-topaz.vercel.app/",
     images: [nc1, nc2, nc3],
+  },
+  {
+    id: 5,
+    company: "Atlas Adventures",
+    year: "2023",
+    title: "Atlas Adventures – Interactive Travel Journal",
+    overview: `
+    A dynamic, map-driven travel journal built with React, Tailwind CSS, and Redux. 
+    Designed for explorers to log, visualize, and relive their journeys with an interactive, 
+    location-based interface and seamless state management.
+  `,
+    projectType: "Personal Project",
+    responsibilities: [
+      "Implemented an interactive map with location selection and real-time geolocation",
+      "Developed a dynamic sidebar to display and edit place details and travel notes",
+      "Integrated Redux for persistent state management across sessions",
+      "Created a clean and responsive UI with Tailwind CSS",
+      "Designed country-level and global map views with travel markers",
+    ],
+    techStack: {
+      frontend: ["React", "Tailwind CSS", "Redux"],
+      backend: [],
+      animations: [],
+      deployment: ["Vercel"],
+      tools: ["VS Code", "Git"],
+    },
+    results: [
+      {
+        title:
+          "Built an intuitive travel logging platform with interactive maps",
+      },
+      {
+        title: "Enabled smooth state persistence for saved locations and notes",
+      },
+      { title: "Delivered a visually engaging and mobile-friendly interface" },
+    ],
+    link: "https://atlas-adventures.vercel.app/", // Update if you have a link
+    images: [at1, at2, at3, at4, at5], // Replace with actual images
   },
 ];
 
