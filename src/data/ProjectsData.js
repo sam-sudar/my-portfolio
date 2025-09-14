@@ -105,7 +105,10 @@ const portfolioProjects = [
       { title: "Improved store operation speed by 60%" },
       { title: "Enabled real-time updates for orders and inventory" },
     ],
-    link: "https://github.com/yourusername/bellaciao",
+    links: {
+      github: "https://github.com/yourusername/bellaciao",
+      demo: "https://bellaciao-bakery.render.com",
+    },
     images: [bk1, bk2, bk3, bk4],
   },
   {
@@ -137,7 +140,10 @@ const portfolioProjects = [
       { title: "Improved trust using blockchain technology" },
       { title: "Learned secure smart contract deployment" },
     ],
-    link: "https://github.com/yourusername/blockchain-credentials",
+    links: {
+      github: "https://github.com/yourusername/blockchain-credentials",
+      demo: null, // Not deployed - runs locally with Ganache
+    },
     images: [bc1, bc2, bc3, bc4],
   },
   {
@@ -168,7 +174,10 @@ const portfolioProjects = [
       { title: "Boosted page speed score to 95+" },
       { title: "Improved SEO ranking for targeted keywords" },
     ],
-    link: "https://github.com/yourusername/eye-my-care",
+    links: {
+      github: "https://github.com/yourusername/eye-my-care",
+      demo: "https://eye-my-care.vercel.app",
+    },
     images: [emc1, emc2, emc3, emc4, emc5],
   },
   {
@@ -199,7 +208,10 @@ const portfolioProjects = [
       { title: "Reduced bundle size with Nuxt.js optimization" },
       { title: "Improved UI consistency with modular design" },
     ],
-    link: "https://nuxt-chat-topaz.vercel.app/",
+    links: {
+      github: "https://github.com/yourusername/nuxtchat",
+      demo: "https://nuxt-chat-topaz.vercel.app/",
+    },
     images: [nc1, nc2, nc3],
   },
   {
@@ -237,8 +249,11 @@ const portfolioProjects = [
       },
       { title: "Delivered a visually engaging and mobile-friendly interface" },
     ],
-    link: "https://atlas-adventures.vercel.app/", // Update if you have a link
-    images: [at1, at2, at3, at4, at5], // Replace with actual images
+    links: {
+      github: "https://github.com/yourusername/atlas-adventures",
+      demo: "https://atlas-adventures.vercel.app/",
+    },
+    images: [at1, at2, at3, at4, at5],
   },
 ];
 
