@@ -101,7 +101,7 @@ export const ProjectsSection = () => {
                       <ArrowUpRightIcon className="size-4" />
                     </button>
                   </a>
-                  <a href={project.link}>
+                  {project.links.demo && (
                     <button
                       className="bg-white text-gray-950 h-12 w-full rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 md:w-auto px-6
                 "
@@ -109,7 +109,7 @@ export const ProjectsSection = () => {
                       <span className="font-urbanist">Visit Live Site</span>
                       <ArrowUpRightIcon className="size-4" />
                     </button>
-                  </a>
+                  )}
                 </div>
                 <div className="relative">
                   <Image
