@@ -58,8 +58,8 @@ export default function ContactPage() {
       icon: "📧",
       title: "Email",
       description: "Drop me a line anytime",
-      value: "hello@yourname.com",
-      action: "mailto:hello@yourname.com",
+      value: "samsudar200@gmail.com",
+      action: "mailto:samsudar200@gmail.com",
       gradient: "from-blue-500/20 to-cyan-500/20",
       borderColor: "border-blue-500/30",
       hoverGradient: "hover:from-blue-500/30 hover:to-cyan-500/30",
@@ -68,8 +68,8 @@ export default function ContactPage() {
       icon: "📱",
       title: "Phone",
       description: "Let's talk directly",
-      value: "+1 (555) 123-4567",
-      action: "tel:+15551234567",
+      value: "+91 9076347110",
+      action: "tel:+919076347110",
       gradient: "from-emerald-500/20 to-green-500/20",
       borderColor: "border-emerald-500/30",
       hoverGradient: "hover:from-emerald-500/30 hover:to-green-500/30",
@@ -78,21 +78,21 @@ export default function ContactPage() {
       icon: "🔗",
       title: "LinkedIn",
       description: "Connect professionally",
-      value: "linkedin.com/in/yourname",
-      action: "https://linkedin.com/in/yourname",
+      value: "linkedin.com/in/jsam2/",
+      action: "https://www.linkedin.com/in/jsam2/",
       gradient: "from-indigo-500/20 to-purple-500/20",
       borderColor: "border-indigo-500/30",
       hoverGradient: "hover:from-indigo-500/30 hover:to-purple-500/30",
     },
     {
-      icon: "💬",
-      title: "Discord",
-      description: "Quick chat or collaboration",
-      value: "yourname#1234",
-      action: "#",
-      gradient: "from-violet-500/20 to-fuchsia-500/20",
-      borderColor: "border-violet-500/30",
-      hoverGradient: "hover:from-violet-500/30 hover:to-fuchsia-500/30",
+      icon: "🐙",
+      title: "GitHub",
+      description: "Code, collaborate, and share",
+      value: "github.com/sam-sudar",
+      action: "https://github.com/sam-sudar",
+      gradient: "from-blue-500/20 to-green-800/20",
+      borderColor: "border-black/30",
+      hoverGradient: "hover:from-black/30 hover:to-green-400/30",
     },
   ];
 
@@ -454,7 +454,7 @@ export default function ContactPage() {
                       <div className="flex items-center gap-3 text-sm font-manrope">
                         <div className="w-2 h-2 bg-violet-400 rounded-full"></div>
                         <span className="text-gray-300">
-                          Projects start at $5,000
+                          Projects start at $500
                         </span>
                       </div>
                       <div className="flex items-center gap-3 text-sm font-manrope">
@@ -534,7 +534,7 @@ export default function ContactPage() {
                         recommended!&quot;
                       </p>
                       <div className="text-xs font-urbanist text-gray-400">
-                        - Recent Client Review
+                        - Abisha Soman (Client)
                       </div>
                     </div>
                   </div>

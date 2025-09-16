@@ -122,7 +122,7 @@ export const HeroSection = () => {
             {/* Building Exceptional User Experiences */}I am SAM
           </h1>
           <p className="mt-4 text-center font-fredoka text-white/60 md:text-lg">
-            <span className="font-bold font-epilogue">
+            <span className="font-bold text-lg font-outfit">
               Full-Stack Developer | React & TypeScript Specialist
             </span>{" "}
             <br />I build fast, scalable, and user-focused web apps using modern
