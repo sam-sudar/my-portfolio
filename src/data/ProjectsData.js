@@ -24,6 +24,13 @@ import at2 from "@/assets/images/atlas/atlas2.jpg";
 import at3 from "@/assets/images/atlas/atlas3.jpg";
 import at4 from "@/assets/images/atlas/atlas4.jpg";
 import at5 from "@/assets/images/atlas/atlas5.jpg";
+import rt1 from "@/assets/images/rent/rent1.jpg";
+import rt2 from "@/assets/images/rent/rent2.jpg";
+import rt3 from "@/assets/images/rent/rent3.jpg";
+import rt4 from "@/assets/images/rent/rent4.jpg";
+import cw1 from "@/assets/images/classy/classy1.jpg";
+import cw2 from "@/assets/images/classy/classy2.jpg";
+import cw3 from "@/assets/images/classy/classy3.jpg";
 
 // const techIcons = {
 //   // Frontend
@@ -254,6 +261,137 @@ const portfolioProjects = [
       demo: "https://atlas-adventures.vercel.app/",
     },
     images: [at1, at2, at3, at4, at5],
+  },
+  {
+    id: 6,
+    company: "RealEstate Insights",
+    year: "2024",
+    title: "Real Estate Price & Rent Prediction System",
+    overview: `
+    A machine learning-based system for predicting house rent prices across Indian cities 
+    and property purchase prices in Bangalore. Built with structured datasets and regression 
+    models, the system enables users to input property details and receive accurate, 
+    data-driven price estimates. Designed with a simple Flask-based interface for 
+    intuitive user interaction and reliable decision-making support in real estate.
+  `,
+    projectType: "Machine Learning Application",
+    responsibilities: [
+      "Designed and implemented Ridge Regression and other ML models for rental and purchase price prediction",
+      "Built a data pipeline for cleaning, preprocessing, and feature engineering of real estate datasets",
+      "Integrated Flask backend with trained ML models to serve predictions through REST APIs",
+      "Developed responsive UI forms for user input and real-time prediction display",
+      "Performed testing with cross-validation, MAE, and RMSE to ensure accuracy",
+      "Deployed the system on a cloud platform with CI/CD pipeline for updates",
+    ],
+    techStack: {
+      frontend: ["HTML", "CSS", "JavaScript"],
+      backend: ["Flask", "Python", "REST API"],
+      machineLearning: ["Ridge Regression", "Random Forest"],
+      dataProcessing: ["Pandas", "NumPy"],
+      development: ["Jupyter Notebook", "VS Code", "Git"],
+      deployment: ["Vercel"],
+    },
+    results: [
+      {
+        title:
+          "Achieved accurate predictions for house rents across Indian cities using structured datasets",
+      },
+      {
+        title:
+          "Developed a Bangalore-specific property price prediction model with strong accuracy",
+      },
+      {
+        title:
+          "Validated models using cross-validation, achieving reliable MAE and RMSE scores",
+      },
+      {
+        title:
+          "Built a user-friendly Flask interface allowing instant property price/rent predictions",
+      },
+      {
+        title:
+          "Deployed scalable cloud-based solution with continuous integration for updates",
+      },
+    ],
+    features: [
+      "Rent prediction across multiple Indian cities",
+      "Purchase price prediction focused on Bangalore properties",
+      "Input fields for property details like BHK, size, location, and furnishing status",
+      "Real-time predictions with REST API integration",
+      "Validation and error handling for user inputs",
+      "Responsive layout for web access on desktop and mobile",
+      "Prediction reports with MAE and RMSE validation",
+      "Scalable modular architecture for future expansion",
+    ],
+    designHighlights: [
+      "Simple, intuitive UI with form-based property input",
+      "Responsive layout supporting multiple devices",
+      "Clear, accessible data visualization of prediction results",
+      "REST API architecture for modularity",
+      "MVC design pattern separating model, logic, and UI",
+    ],
+    links: {
+      github: "https://github.com/yourusername/real-estate-prediction",
+      demo: "https://realestate-prediction-demo.com",
+    },
+    images: [rt1, rt2, rt3, rt4],
+    technologies: {
+      stateManagement: "Handled via Flask controllers and REST APIs",
+      styling: "HTML5/CSS3 responsive design",
+      apiIntegration: "Flask REST API serving ML model predictions",
+      userExperience:
+        "Form validation, instant prediction display, clean layout",
+      responsiveDesign:
+        "Flexible front-end supporting desktop and mobile devices",
+    },
+  },
+  {
+    id: 7,
+    company: "Classy Weather",
+    year: "2025",
+    title: "Classy Weather – 4-Day Forecast App",
+    overview: `
+    A lightweight React app that provides a 4-5 day weather forecast based on user input. 
+    Users can type in any location and get a clear, card-based weather display with icons 
+    for temperature, conditions, and other relevant metrics.
+  `,
+    projectType: "Personal Project",
+    responsibilities: [
+      "Built frontend entirely in React with reusable card components",
+      "Implemented user input handling and API fetch for weather data",
+      "Displayed weather forecasts for multiple days in a visually clear card layout",
+      "Managed state with React hooks for dynamic updates",
+    ],
+    techStack: {
+      frontend: ["React", "CSS"],
+      backend: [],
+      animations: [],
+      deployment: ["Vercel"], // You can change this if deployed elsewhere
+      tools: ["VS Code", "Git"],
+    },
+    results: [
+      { title: "Simple, intuitive interface for checking weather forecasts" },
+      { title: "Accurately fetches weather data for multiple days" },
+      { title: "Dynamic display with responsive weather cards" },
+    ],
+    links: {
+      github: "https://github.com/yourusername/classy-weather",
+      demo: "https://classy-weather.vercel.app",
+    },
+    images: [cw1, cw2, cw3],
+    features: [
+      "User input for location search",
+      "4-5 day weather forecast displayed in cards",
+      "Weather icons representing conditions",
+      "Temperature, humidity, and condition metrics",
+      "Responsive layout for desktop and mobile",
+    ],
+    designHighlights: [
+      "Clean card-based UI for easy readability",
+      "Responsive design supporting multiple devices",
+      "Dynamic weather updates without page reload",
+      "Minimalist React architecture for simplicity",
+    ],
   },
 ];
 

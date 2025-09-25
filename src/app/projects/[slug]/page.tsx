@@ -59,6 +59,34 @@ const techIcons = {
     "https://seeklogo.com/images/G/ganache-logo-1EB72084A8-seeklogo.com.png",
   Lighthouse:
     "https://www.gstatic.com/images/branding/product/2x/pagespeed_96dp.png",
+  Flask:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
+  Python:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+  "REST API":
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg", // Swagger as a representation
+
+  // Machine Learning
+  "Scikit-learn":
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikit-learn/scikit-learn-original.svg",
+  "Random Forest":
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", // Placeholder, as there's no specific icon for Random Forest
+
+  // Data Processing
+  Pandas:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg",
+  NumPy:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg",
+
+  // Development
+  "Jupyter Notebook":
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
+
+  // Deployment
+  "Cloud Hosting":
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg", // AWS as a representative
+  "CI/CD Pipeline":
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", // Git as a placeholder for CI/CD
 };
 
 type Props = {

@@ -62,7 +62,7 @@ export const ProjectsSection = () => {
         />
         {/* Cards Section  */}
         <div className="flex flex-col md:mt-20 mt-10 gap-20">
-          {portfolioProjects.map((project, projectIndex) => (
+          {portfolioProjects.slice(0, 5).map((project, projectIndex) => (
             <Card
               key={project.title}
               className="pb-0 pt-8 px-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky top-16"
